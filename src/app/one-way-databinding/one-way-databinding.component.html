@@ -1,0 +1,13 @@
+<p>one-way-databinding works!</p>
+<form>
+  No1: <input type="number" size="20" #no1> <br/>
+  No2: <input type="number" size="20" #no2> <br/>
+  <input type="button" value="Sum" (click)="sum(no1,no2)">
+  <input type="button" value="Sub" (click)="sub(no1,no2)">
+
+  <input type="reset" value="clear">
+</form>
+
+<h1>Sum : {{msg}}</h1>
+
+<h1>Sub : {{msg1}}</h1>

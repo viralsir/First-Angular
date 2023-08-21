@@ -1,0 +1,12 @@
+h1{
+  color:red;
+  background-color: yellow;
+}
+table{
+  border:2px solid black;
+  border-collapse: collapse;
+}
+th,tr {
+  border : 2px solid black;
+  padding: 10px;
+}
