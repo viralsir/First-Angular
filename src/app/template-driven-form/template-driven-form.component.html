@@ -1,0 +1,9 @@
+<h1>template-driven-form works!</h1>
+<form #loginFormRef="ngForm" (ngSubmit)="checkUser(loginFormRef)" >
+   UserName : <input type="text" size="20" name="username" ngModel> <br/>
+   Password : <input type="password" size="20" name="password" ngModel> <br/>
+  <input type="submit" value="login">
+  <input type="reset" value="clear">
+</form>
+<br/>
+<h4>{{msg}}</h4>
