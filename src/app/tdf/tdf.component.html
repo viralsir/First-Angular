@@ -1,0 +1,45 @@
+<h2>tdf Form</h2>
+ <form  #studentFormRef="ngForm" (ngSubmit)="viewStudent(studentFormRef)">
+     <table>
+       <tr>
+         <th>Roll No:</th>
+         <td><input type="number" name="rno" ngModel required></td>
+       </tr>
+       <tr>
+         <th>Name :</th>
+         <td><input type="text" name="name" ngModel minlength="5"  required></td>
+       </tr>
+       <tr>
+         <th>Maths(0-100) :</th>
+         <td><input type="number" name="maths" min="0"  max="100" ngModel required></td>
+       </tr>
+       <tr>
+         <th>Science:</th>
+         <td><input type="number" name="science" min="0"  max="100" ngModel required></td>
+       </tr>
+       <tr>
+         <th>English:</th>
+         <td><input type="number" name="english" min="0"  max="100" ngModel required></td>
+       </tr>
+       <tr>
+         <th colspan="2">
+           <input type="submit" value="save" [disabled]="studentFormRef.invalid">
+           <input type="reset" value="clear">
+         </th>
+
+       </tr>
+
+     </table>
+ </form>
+  <br/>
+    <h4> valid : {{studentFormRef.valid}}</h4>
+     <h4> invalid : {{studentFormRef.invalid}}</h4>
+  <h1> STUDENT INFO</h1>
+  <ul>
+    <li>Roll No: {{student.rno}}</li>
+    <li>Name : {{student.name}}</li>
+    <li>Maths :{{student.maths}}</li>
+    <li>English:{{student.english}}</li>
+    <li>Science : {{student.science}}</li>
+    <li> Status : {{student.status}}</li>
+  </ul>

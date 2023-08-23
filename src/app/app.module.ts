@@ -9,6 +9,7 @@ import { OneWayDatabindingComponent } from './one-way-databinding/one-way-databi
 import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component';
 import {FormsModule} from "@angular/forms";
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { TdfComponent } from './tdf/tdf.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
     PropertyBindingComponent,
     OneWayDatabindingComponent,
     TwoWayDatabindingComponent,
-    TemplateDrivenFormComponent
+    TemplateDrivenFormComponent,
+    TdfComponent
   ],
     imports: [
         BrowserModule,
