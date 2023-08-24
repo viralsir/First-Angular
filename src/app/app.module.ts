@@ -7,9 +7,10 @@ import { Child1Component } from './child1/child1.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { OneWayDatabindingComponent } from './one-way-databinding/one-way-databinding.component';
 import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { TdfComponent } from './tdf/tdf.component';
+import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,14 @@ import { TdfComponent } from './tdf/tdf.component';
     OneWayDatabindingComponent,
     TwoWayDatabindingComponent,
     TemplateDrivenFormComponent,
-    TdfComponent
+    TdfComponent,
+    ModelDrivenFormComponent
   ],
-    imports: [
-        BrowserModule,
-        FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

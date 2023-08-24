@@ -1,0 +1,45 @@
+<h1>model-driven-form works!</h1>
+<form [formGroup]="StudentFormGroup" (ngSubmit)="pass_fail()">
+   <table>
+     <tr>
+       <th>
+         Roll No:
+       </th>
+       <td>
+         <input type="number" formControlName="rno" >
+       </td>
+     </tr>
+     <tr>
+       <th>Name :</th>
+       <td><input type="text" formControlName="name"></td>
+     </tr>
+     <tr>
+       <th>Maths :</th>
+       <td><input type="number" formControlName="maths" ></td>
+     </tr>
+     <tr>
+       <th>Science:</th>
+       <td><input type="number" formControlName="science" ></td>
+     </tr>
+     <tr>
+       <th>English</th>
+       <td><input type="number" formControlName="english" ></td>
+     </tr>
+     <tr>
+       <th>
+         <input type="submit" value="result" [disabled]="StudentFormGroup.invalid">
+         <input type="reset" value="clear">
+       </th>
+     </tr>
+   </table>
+</form>
+
+<h2> Student Info</h2>
+<ul>
+  <li> Roll No: {{StudentFormGroup.value.rno}}</li>
+  <li> Name: {{StudentFormGroup.value.name}}</li>
+  <li> Maths : {{StudentFormGroup.value.maths}}</li>
+  <li> Science : {{StudentFormGroup.value.science}}</li>
+  <li> English : {{StudentFormGroup.value.english}}</li>
+  <li>{{status}}</li>
+</ul>
