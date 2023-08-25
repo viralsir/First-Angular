@@ -11,6 +11,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { TdfComponent } from './tdf/tdf.component';
 import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.component';
+import { StructureDirectiveComponent } from './structure-directive/structure-directive.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.
     TwoWayDatabindingComponent,
     TemplateDrivenFormComponent,
     TdfComponent,
-    ModelDrivenFormComponent
+    ModelDrivenFormComponent,
+    StructureDirectiveComponent
   ],
   imports: [
     BrowserModule,

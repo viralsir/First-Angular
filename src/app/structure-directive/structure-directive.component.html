@@ -1,0 +1,34 @@
+<p>structure-directive works!</p>
+
+<h1 *ngIf="true"> Content inside h1 tag  true part</h1>
+<h1 *ngIf="false"> content inside h1 tag false part</h1>
+<input type="button" (click)="showcontent()" [value]="label">
+<h1 *ngIf="show"> content inside h1 tag show part</h1>
+
+<h1> list of names </h1>
+<ul>
+   <li *ngFor="let element of names"> {{element}}</li>
+</ul>
+
+
+<form [formGroup]="UserFormGroup" (ngSubmit)="AddUser()">
+  UserName : <input type="text" size="20" formControlName="name"> <br/>
+  Salary : <input type="number" formControlName="salary"> <br/>
+  <input type="submit" value="Add" [disabled]="UserFormGroup.invalid" > <input type="reset" value="clear">
+
+</form>
+
+<h1> User Info</h1>
+<table>
+  <tr>
+    <th>Name </th>
+    <th>Salary</th>
+  </tr>
+  <tr *ngFor="let element of userInfo" >
+     <td>{{element.name}}</td>
+      <td>{{element.salary}}</td>
+  </tr>
+</table>
+
+
+
