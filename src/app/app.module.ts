@@ -12,6 +12,8 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
 import { TdfComponent } from './tdf/tdf.component';
 import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.component';
 import { StructureDirectiveComponent } from './structure-directive/structure-directive.component';
+import {StructureDriven2Component} from "./structure-directive2/structure-driven2.component";
+import { ForLoopTableComponent } from './for-loop-table/for-loop-table.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { StructureDirectiveComponent } from './structure-directive/structure-dir
     TemplateDrivenFormComponent,
     TdfComponent,
     ModelDrivenFormComponent,
-    StructureDirectiveComponent
+    StructureDirectiveComponent,
+    StructureDriven2Component,
+    ForLoopTableComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+<p>structure-driven2 works!</p>
+<form [formGroup]="ProductformGroup" (ngSubmit)="addDATA()">
+  <table>
+    <tr>
+      <th >Product_Id : <input type="number" formControlName="p_id"></th>
+      <th>Product_name : <input type="text" formControlName="p_name"></th>
+      <th>Product_Quantity : <input type="number" formControlName="p_quantity"></th>
+      <th>Product_Price : <input type="number" formControlName="p_price"></th>
+      <th>Total_Discount : <input type="number" formControlName="p_discount"></th>
+      <input type="submit" value="Add">
+      <input type="reset" value="clear">
+    </tr>
+  </table>
+</form>
+
+<h1>Product_Data</h1>
+<table>
+  <tr>
+  <th>Product_Id</th>
+  <th>Product_name</th>
+  <th>Product_Quantity</th>
+  <th>Product_Price</th>
+  <th>Total_Discount</th>
+  </tr>
+  <tr *ngFor="let element of Product_Data">
+    <td>{{element.p_id}}</td>
+    <td>{{element.p_name}}</td>
+    <td>{{element.p_quantity}}</td>
+    <td>{{element.p_price}}</td>
+    <td>{{element.p_discount}}</td>
+  </tr>
+</table>

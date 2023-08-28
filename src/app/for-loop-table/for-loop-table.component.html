@@ -1,0 +1,8 @@
+<p>for-loop-table works!</p>
+<form >
+  No : <input type="number" #no1>
+  <br/> <input type="button" value="show" (click)="showMultiplicationTable(no1)">
+</form>
+<table>
+   <tr *ngFor="let element  of data"> <th>{{no}} * {{element}} = {{no*element}}</th></tr>
+</table>
