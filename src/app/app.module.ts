@@ -14,6 +14,8 @@ import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.
 import { StructureDirectiveComponent } from './structure-directive/structure-directive.component';
 import {StructureDriven2Component} from "./structure-directive2/structure-driven2.component";
 import { ForLoopTableComponent } from './for-loop-table/for-loop-table.component';
+import { EmployeeEntryComponent } from './employee-entry/employee-entry.component';
+import { EmployeeViewComponent } from './employee-view/employee-view.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ForLoopTableComponent } from './for-loop-table/for-loop-table.component
     ModelDrivenFormComponent,
     StructureDirectiveComponent,
     StructureDriven2Component,
-    ForLoopTableComponent
+    ForLoopTableComponent,
+    EmployeeEntryComponent,
+    EmployeeViewComponent
   ],
   imports: [
     BrowserModule,
