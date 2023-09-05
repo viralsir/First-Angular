@@ -1,0 +1,10 @@
+<p>product-form works!</p>
+
+
+<h1>Product_Details</h1>
+<ul type="circle" *ngFor="let product of ProductService.prd">
+  <li>Product_ID : {{product.id}}</li>
+  <li>Product_Name : {{product.name}}</li>
+  <li>Product_Price : {{product.price}}</li>
+  <li>Product_Quantity :{{product.quantity}} </li>
+</ul>

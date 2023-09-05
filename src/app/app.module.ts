@@ -16,6 +16,8 @@ import {StructureDriven2Component} from "./structure-directive2/structure-driven
 import { ForLoopTableComponent } from './for-loop-table/for-loop-table.component';
 import { EmployeeEntryComponent } from './employee-entry/employee-entry.component';
 import { EmployeeViewComponent } from './employee-view/employee-view.component';
+import {ProductFormComponent} from "./product-form/product-form.component";
+import {ProductListComponent} from "./product-list/product-list.component";
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { EmployeeViewComponent } from './employee-view/employee-view.component';
     StructureDriven2Component,
     ForLoopTableComponent,
     EmployeeEntryComponent,
-    EmployeeViewComponent
+    EmployeeViewComponent,
+    ProductFormComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
