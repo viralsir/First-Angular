@@ -1,13 +1,10 @@
 <h1>employee-entry works!</h1>
-<table>
-  <tr>
-    <th>Id</th>
-    <th>Name</th>
-    <th>Salary</th>
-  </tr>
-  <tr *ngFor="let employee of this.employeeservice.Employees">
-     <td>{{employee.id}}</td>
-     <td>{{employee.name}}</td>
-     <td>{{employee.salary}}</td>
-  </tr>
-</table>
+<form [formGroup]="employeeGroup" (ngSubmit)="addData()">
+
+  Id : <input type="text" formControlName="id"><br/>
+  Name: <input type="text" formControlName="name"> <br/>
+  Salary : <input type="text" formControlName="salary"> <br/>
+  <input type="submit" value="add" [disabled]="employeeGroup.invalid"> <input type="reset" value="clear">
+
+
+</form>

@@ -9,7 +9,9 @@ export class EmployeeService {
     {"id":2,"name":"amit","salary":23000}]
   constructor() { }
 
-
+   public entry(EmployeeData:any){
+      this.Employees.push(EmployeeData);
+   }
 
 
 }

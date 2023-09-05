@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {EmployeeService} from "../employee.service";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-employee-entry',
@@ -9,6 +10,14 @@ import {EmployeeService} from "../employee.service";
 export class EmployeeEntryComponent {
 
   //employeeservice:any="";
+  employeeGroup=new FormGroup({
+    id:new FormControl(),
+    name:new FormControl("",[Validators.required]),
+    salary:new FormControl("",[Validators.required,Validators.min(0)])
+  })
+
+
+
 
   constructor(public employeeservice:EmployeeService) {
     //this.employeeservice=new EmployeeService();
@@ -16,4 +25,9 @@ export class EmployeeEntryComponent {
   }
 
 
+  addData() {
+    let formdata=this.employeeGroup.value;
+    this.employeeservice.entry(formdata);
+    this.employeeGroup.reset();
+  }
 }
